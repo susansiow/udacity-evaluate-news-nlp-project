@@ -1,0 +1,32 @@
+$lightBlue: #22a6b3;
+$white: #fff;
+
+
+html {
+    scroll-behavior: smooth;
+
+    body {
+        font-family: 'Baloo Paaji 2', cursive;
+        background-color: $white;
+        padding: 0;
+        margin: 0;
+
+        .landing-container-wrapper {
+            width: 100%;
+            min-height: 100vh;
+            color: $white;
+            background: $lightBlue;
+        }
+
+        a {
+            color: $lightBlue;
+            transition: 0.3;
+        
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+    }
+
+}

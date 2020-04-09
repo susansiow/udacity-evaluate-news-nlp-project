@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Natural Language Processing App</title>
+        <meta name="Natural Language Processing App" content="Evaluate a news article with Aylien NLP API." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <!-- Landing Page Container Wrapper -->
+
+        <div class="landing-container-wrapper">
+
+            <header>
+
+                <h1>News Article Evaluation</h1>
+
+            </header>
+
+            <!-- Input Form -->
+
+            <section class="form-input">
+
+                <!-- Input Field: Web Page URL -->
+
+                <input type="text" name="url-input" id="url-input" placeholder="web page url">
+
+                <!-- Submit Button -->
+
+                <input type="submit" name="url-submit" value="submit" onclick="return Client.handleSubmit(event)">
+
+            </section>
+
+            <!-- Form Output -->
+
+            <section class="form-output">
+
+                <div id="polarity"></div>
+                <div id="scanned-texts"></div>
+
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+
+        <footer>
+
+            <div class="footer-wrapper">
+
+                <!-- Copyright -->
+
+                <div class="footer-copyright">
+
+                    <p>Ⓒ 2020 
+                        <a href="http://localhost:8081/">NLP App</a>
+                    <p>
+
+                </div>
+
+                <!-- NLP API Credit -->
+
+                <div class="footer-credit">
+
+                    <p>NLP API by
+                        <a href="https://aylien.com/" rel="noopener" target="_blank">Aylien</a>
+                    <p>
+
+                </div>
+
+                <!-- Developer Info -->
+
+                <div class="developer-info">
+
+                    <p>Web Developed by <a href="https://www.susansiow.com" rel="noopener" target="_blank">Susan Siow</a></p>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+        <!-- Script: Service Worker -->
+
+        <script>
+
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+
+        </script>
+
+    </body>
+
+</html>

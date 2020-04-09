@@ -1,0 +1,70 @@
+$lightBlue: #22a6b3;
+$white: #fff;
+
+/* Section */
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Form Input */
+
+.form-input {
+    padding: 30px 40px 40px;
+
+    input {
+        width: 100%;
+        font-family: 'Baloo Paaji 2', cursive;
+        font-size: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        padding: 12px 10px;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 6px 6px 60px 0 $white;
+        margin-bottom: 20px;
+
+        &[type="submit"] {
+            color: $white;
+            font-weight: bold;
+            background-color: $lightBlue;
+            border: 1px solid $lightBlue;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+            border: 1px solid #fff;
+            }
+        }
+
+    }
+
+}
+
+/* Form Output */
+
+.form-output {
+    padding: 0 40px 140px;
+
+    h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        padding: 10px;
+        border-bottom: 1px dotted #fff;
+    }
+
+    .results {
+        font-style: italic;
+        padding: 0 10px;
+    }
+
+    .result-polarity {
+        text-transform: capitalize;
+    }
+
+}
